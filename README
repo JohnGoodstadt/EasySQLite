@@ -54,27 +54,27 @@ self.db = [DBController sharedDatabaseController:@"DataTable.sqlite"];
 
 
 //Execute Command
-
 DataTable* table = [_db  ExecuteQuery:@"SELECT firstname , lastname , age , salary FROM person"];
+
 // list out values
 
- for (NSArray* row in table.rows)
-    {
-        
-        NSString* firstname = row[0]; // in column order 0 is first column in query above
-        NSString* lastname = row[1];
-        NSNumber* age = row[2]; // sqlite ints and floats arrive as NSNumbers
-        NSNumber* salary = row[3];
-        
-        
-        NSLog(@"row:%i %@ %@ %@ %@",
-              [table.rows indexOfObject:row]+1, /*zero based*/
-              firstname,
-              lastname,
-              age,
-              salary);
-        
-    }
+for (NSArray* row in table.rows)
+{
+    
+    NSString* firstname = row[0]; // in column order 0 is first column in query above
+    NSString* lastname = row[1];
+    NSNumber* age = row[2]; // sqlite ints and floats arrive as NSNumbers
+    NSNumber* salary = row[3];
+    
+    
+    NSLog(@"row:%i %@ %@ %@ %@",
+          [table.rows indexOfObject:row]+1, /*zero based*/
+          firstname,
+          lastname,
+          age,
+          salary);
+    
+}
 
 
 
