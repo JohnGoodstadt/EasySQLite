@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+@class DBController,DataTable;
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDelegate>
+
+@property (strong, nonatomic) IBOutlet UITableView *tableview;
+@property (strong, nonatomic) DataTable* personTable;
+@property (strong, nonatomic) DBController* db;
+
+-(void)ReadeTableFromDB_Method1;
+-(void)ReadeTableFromDB_Method2;
+-(void)ReadeTableFromDB_Method3;
 
 @end

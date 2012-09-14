@@ -1,0 +1,82 @@
+EasySQLite
+
+Last Revision:
+Version 1.0, 2012-09-14
+Build Requirements:
+iOS SDK 5 - Phone device
+Runtime Requirements:
+iOS 5 or later
+XCode 4.5 IOS 6.0 - for new, easier, array Syntax.
+If you use pre XCode 4.5 (IOS 5) change row[0] syntax to [row objectAtIndex:0]
+
+
+This sample application demonstrates how to easily get your data from your SQLite DB.
+
+Use this file in your own projects as you see fit.
+Please email me at john@goodstadt.me.uk for any problems, fixes, addition or thanks.
+================================================================================
+Example:
+
+DataTable* table = [_db  ExecuteQuery:@"SELECT firstname , lastname , age , salary FROM person"];
+for (NSArray* row in table.rows)
+{
+    NSString* firstname = row[0]; // in column order 0 is first column in query above
+    NSString* lastname = row[1];
+    NSNumber* age = row[2]; // sqlite ints and floats arrive as NSNumbers
+    NSNumber* salary = row[3];
+}
+
+================================================================================
+Instructions to run sample:
+
+open EasySQLite.xcodeproj and run.
+A Demo DB will be read and echoed to the Log window and a UITableview will display each row
+
+================================================================================
+Instructions to add to your own project:
+
+Copy Database group to your project - 4 files (DataTable.h,DataTable.m,DBController.h,DBController.m)
+
+Add an iVar viewController.h that will access the DB
+
+@property (strong, nonatomic) DBController* db;
+
+Add these lines to the viewController.m that will access the DB
+
+#import "DBController.h"
+#import "DataTable.h"
+
+//synthesize the iVar
+@synthesize db=_db;
+
+//Set up DB connection
+self.db = [DBController sharedDatabaseController:@"DataTable.sqlite"];
+
+
+//Execute Command
+
+DataTable* table = [_db  ExecuteQuery:@"SELECT firstname , lastname , age , salary FROM person"];
+// list out values
+
+ for (NSArray* row in table.rows)
+    {
+        
+        NSString* firstname = row[0]; // in column order 0 is first column in query above
+        NSString* lastname = row[1];
+        NSNumber* age = row[2]; // sqlite ints and floats arrive as NSNumbers
+        NSNumber* salary = row[3];
+        
+        
+        NSLog(@"row:%i %@ %@ %@ %@",
+              [table.rows indexOfObject:row]+1, /*zero based*/
+              firstname,
+              lastname,
+              age,
+              salary);
+        
+    }
+
+
+
+================================================================================
+

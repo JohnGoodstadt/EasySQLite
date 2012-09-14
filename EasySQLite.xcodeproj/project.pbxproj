@@ -16,8 +16,19 @@
 		525B722F16034B6A00134DE5 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 525B722E16034B6A00134DE5 /* Default.png */; };
 		525B723116034B6A00134DE5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 525B723016034B6A00134DE5 /* Default@2x.png */; };
 		525B723316034B6A00134DE5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 525B723216034B6A00134DE5 /* Default-568h@2x.png */; };
-		525B723616034B6A00134DE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 525B723516034B6A00134DE5 /* ViewController.m */; };
 		525B723916034B6A00134DE5 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 525B723716034B6A00134DE5 /* ViewController.xib */; };
+		525B724016034B7700134DE5 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 525B723F16034B7700134DE5 /* libsqlite3.0.dylib */; };
+		525B724916034BA000134DE5 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 525B724316034BA000134DE5 /* Icon-72.png */; };
+		525B724A16034BA000134DE5 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 525B724416034BA000134DE5 /* Icon-Small-50.png */; };
+		525B724B16034BA000134DE5 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 525B724516034BA000134DE5 /* Icon-Small.png */; };
+		525B724C16034BA000134DE5 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 525B724616034BA000134DE5 /* Icon-Small@2x.png */; };
+		525B724D16034BA000134DE5 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 525B724716034BA000134DE5 /* Icon.png */; };
+		525B724E16034BA000134DE5 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 525B724816034BA000134DE5 /* Icon@2x.png */; };
+		525B725416034BBE00134DE5 /* DBController.m in Sources */ = {isa = PBXBuildFile; fileRef = 525B724F16034BBE00134DE5 /* DBController.m */; };
+		525B725516034BBE00134DE5 /* DataTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 525B725216034BBE00134DE5 /* DataTable.m */; };
+		525B725616034BBE00134DE5 /* DataTable.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 525B725316034BBE00134DE5 /* DataTable.sqlite */; };
+		525B725916034BDD00134DE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 525B725716034BDD00134DE5 /* ViewController.m */; };
+		525B725B16034C6100134DE5 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 525B725A16034C6100134DE5 /* README */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,9 +45,22 @@
 		525B722E16034B6A00134DE5 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		525B723016034B6A00134DE5 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		525B723216034B6A00134DE5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		525B723416034B6A00134DE5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		525B723516034B6A00134DE5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		525B723816034B6A00134DE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		525B723F16034B7700134DE5 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		525B724316034BA000134DE5 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		525B724416034BA000134DE5 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		525B724516034BA000134DE5 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		525B724616034BA000134DE5 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		525B724716034BA000134DE5 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		525B724816034BA000134DE5 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		525B724F16034BBE00134DE5 /* DBController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBController.m; sourceTree = "<group>"; };
+		525B725016034BBE00134DE5 /* DBController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBController.h; sourceTree = "<group>"; };
+		525B725116034BBE00134DE5 /* DataTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataTable.h; sourceTree = "<group>"; };
+		525B725216034BBE00134DE5 /* DataTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataTable.m; sourceTree = "<group>"; };
+		525B725316034BBE00134DE5 /* DataTable.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = DataTable.sqlite; sourceTree = "<group>"; };
+		525B725716034BDD00134DE5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		525B725816034BDD00134DE5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		525B725A16034C6100134DE5 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				525B724016034B7700134DE5 /* libsqlite3.0.dylib in Frameworks */,
 				525B721D16034B6A00134DE5 /* UIKit.framework in Frameworks */,
 				525B721F16034B6A00134DE5 /* Foundation.framework in Frameworks */,
 				525B722116034B6A00134DE5 /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +81,8 @@
 		525B720D16034B6A00134DE5 = {
 			isa = PBXGroup;
 			children = (
+				525B725A16034C6100134DE5 /* README */,
+				525B723F16034B7700134DE5 /* libsqlite3.0.dylib */,
 				525B722216034B6A00134DE5 /* EasySQLite */,
 				525B721B16034B6A00134DE5 /* Frameworks */,
 				525B721916034B6A00134DE5 /* Products */,
@@ -83,11 +110,13 @@
 		525B722216034B6A00134DE5 /* EasySQLite */ = {
 			isa = PBXGroup;
 			children = (
+				525B724216034B8100134DE5 /* Database */,
+				525B724116034B7B00134DE5 /* Resources */,
 				525B722B16034B6A00134DE5 /* AppDelegate.h */,
 				525B722C16034B6A00134DE5 /* AppDelegate.m */,
-				525B723416034B6A00134DE5 /* ViewController.h */,
-				525B723516034B6A00134DE5 /* ViewController.m */,
 				525B723716034B6A00134DE5 /* ViewController.xib */,
+				525B725716034BDD00134DE5 /* ViewController.m */,
+				525B725816034BDD00134DE5 /* ViewController.h */,
 				525B722316034B6A00134DE5 /* Supporting Files */,
 			);
 			path = EasySQLite;
@@ -105,6 +134,31 @@
 				525B723216034B6A00134DE5 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		525B724116034B7B00134DE5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				525B724316034BA000134DE5 /* Icon-72.png */,
+				525B724416034BA000134DE5 /* Icon-Small-50.png */,
+				525B724516034BA000134DE5 /* Icon-Small.png */,
+				525B724616034BA000134DE5 /* Icon-Small@2x.png */,
+				525B724716034BA000134DE5 /* Icon.png */,
+				525B724816034BA000134DE5 /* Icon@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		525B724216034B8100134DE5 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				525B724F16034BBE00134DE5 /* DBController.m */,
+				525B725016034BBE00134DE5 /* DBController.h */,
+				525B725116034BBE00134DE5 /* DataTable.h */,
+				525B725216034BBE00134DE5 /* DataTable.m */,
+				525B725316034BBE00134DE5 /* DataTable.sqlite */,
+			);
+			name = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +217,14 @@
 				525B723116034B6A00134DE5 /* Default@2x.png in Resources */,
 				525B723316034B6A00134DE5 /* Default-568h@2x.png in Resources */,
 				525B723916034B6A00134DE5 /* ViewController.xib in Resources */,
+				525B724916034BA000134DE5 /* Icon-72.png in Resources */,
+				525B724A16034BA000134DE5 /* Icon-Small-50.png in Resources */,
+				525B724B16034BA000134DE5 /* Icon-Small.png in Resources */,
+				525B724C16034BA000134DE5 /* Icon-Small@2x.png in Resources */,
+				525B724D16034BA000134DE5 /* Icon.png in Resources */,
+				525B724E16034BA000134DE5 /* Icon@2x.png in Resources */,
+				525B725616034BBE00134DE5 /* DataTable.sqlite in Resources */,
+				525B725B16034C6100134DE5 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +237,9 @@
 			files = (
 				525B722916034B6A00134DE5 /* main.m in Sources */,
 				525B722D16034B6A00134DE5 /* AppDelegate.m in Sources */,
-				525B723616034B6A00134DE5 /* ViewController.m in Sources */,
+				525B725416034BBE00134DE5 /* DBController.m in Sources */,
+				525B725516034BBE00134DE5 /* DataTable.m in Sources */,
+				525B725916034BDD00134DE5 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +320,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EasySQLite/EasySQLite-Prefix.pch";
 				INFOPLIST_FILE = "EasySQLite/EasySQLite-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -267,6 +332,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EasySQLite/EasySQLite-Prefix.pch";
 				INFOPLIST_FILE = "EasySQLite/EasySQLite-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
