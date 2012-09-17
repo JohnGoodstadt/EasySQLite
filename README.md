@@ -24,6 +24,12 @@ for (NSArray* row in table.rows)
     NSNumber* age = row[2]; // sqlite ints and floats arrive as NSNumbers
     NSNumber* salary = row[3];
 }
+
+NSString* firstname =   table.rows[1][0]; // row 2 col 1 - zero based
+NSString* lastname =    table.rows[1][1]; // row 2 col 2
+NSNumber* age =         table.rows[1][2]; // row 2 col 3
+NSNumber* salary =      table.rows[1][3]; // row 2 col 4
+
 ```
 
 # Other useful commands:
