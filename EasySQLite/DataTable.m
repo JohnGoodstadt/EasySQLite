@@ -38,7 +38,6 @@
     return returnValue;
     
 }
-
 -(NSString*)getValueFromRow:(int)rowindex forColumnName:(NSString*)colname
 {
     // could use dictionary for quicker lookup

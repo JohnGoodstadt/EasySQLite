@@ -1,13 +1,4 @@
-EasySQLite
-
-Last Revision:
-Version 1.0, 2012-09-14
-Build Requirements:
-iOS SDK 5 - Phone device
-Runtime Requirements:
-iOS 5 or later
-XCode 4.5 IOS 6.0 - for new, easier, array Syntax.
-If you use pre XCode 4.5 (IOS 5) change row[0] syntax to [row objectAtIndex:0]
+# EasySQLite
 
 
 This sample application demonstrates how to easily get your data from your SQLite DB.
@@ -17,6 +8,7 @@ Please email me at john@goodstadt.me.uk for any problems, fixes, addition or tha
 ================================================================================
 Example:
 
+```obj-c
 DataTable* table = [_db  ExecuteQuery:@"SELECT firstname , lastname , age , salary FROM person"];
 for (NSArray* row in table.rows)
 {
@@ -25,10 +17,11 @@ for (NSArray* row in table.rows)
     NSNumber* age = row[2]; // sqlite ints and floats arrive as NSNumbers
     NSNumber* salary = row[3];
 }
+```
 
+# Other useful commands:
 
-Other useful commands:
-
+```obj-c
 //Scalar 1 result returned
 int personCount = [_db  ExecuteScalar:@"SELECT count(*) FROM person" asInt:YES];
 
@@ -41,25 +34,28 @@ int DBID = [_db  ExecuteINSERT:@"INSERT INTO person(firstname,lastname,age,salar
 
 //Delete - returning how many rows affteced by delete
 int rowsaffected = [_db  ExecuteNonQuery:@"DELETE FROM person WHERE lastname = 'smith'"];
-
+```
 
 ================================================================================
-Instructions to run sample:
+# Instructions to run sample:
 
 open EasySQLite.xcodeproj and run.
 A Demo DB will be read and echoed to the Log window and a UITableview will display each row
 
 ================================================================================
-Instructions to add to your own project:
+# Instructions to add to your own project:
 
 Copy Database group to your project - 4 files (DataTable.h,DataTable.m,DBController.h,DBController.m)
 
-Add an iVar viewController.h that will access the DB
+Add an iVar viewController.h that will access the DB:
 
+```obj-c
 @property (strong, nonatomic) DBController* db;
+```
 
-Add these lines to the viewController.m that will access the DB
+Add these lines to the viewController.m that will access the DB:
 
+```obj-c
 #import "DBController.h"
 #import "DataTable.h"
 
@@ -92,7 +88,13 @@ for (NSArray* row in table.rows)
           salary);
     
 }
+```
 
-================================================================================
-
-
+Last Revision:
+Version 1.0, 2012-09-14
+Build Requirements:
+iOS SDK 5 - Phone device
+Runtime Requirements:
+iOS 5 or later
+**XCode 4.5 IOS 6.0** - for new, easier, array Syntax.
+If you use pre XCode 4.5 (IOS 5) change row[0] syntax to [row objectAtIndex:0]

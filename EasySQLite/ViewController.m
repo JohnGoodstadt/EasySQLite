@@ -30,6 +30,7 @@
     [self ReadeTableFromDB_Method1];
     [self ReadeTableFromDB_Method2];
     [self ReadeTableFromDB_Method3];
+    [self ReadeTableFromDB_Method4];
     [self otherSQLCommands];
     
     [self setupTableviewData];
@@ -49,11 +50,13 @@
     
     
 }
-
+/*
+ show loop syntax for( ...
+ */
 -(void)ReadeTableFromDB_Method1
 {
           
-    NSLog(@"Reading table person.");
+    NSLog(@"Reading table person. - method 1.");
     
     DataTable* table = [_db  ExecuteQuery:@"SELECT firstname , lastname , age , salary FROM person"];
     
@@ -70,7 +73,9 @@
     
     
 }
-
+/*
+ show syntax table.row[row]
+ */
 -(void)ReadeTableFromDB_Method2
 {
       
@@ -98,11 +103,37 @@
     
     
 }
-
+/*
+ show syntax table.rows[row][column] - index introduced first use in XCode 4.5
+ */
 -(void)ReadeTableFromDB_Method3
 {
     
     NSLog(@"Reading table person - method 3.");
+    
+    DataTable* table = [_db  ExecuteQuery:@"SELECT firstname , lastname , age , salary FROM person"];
+    
+    NSString* firstname =   table.rows[1][0]; // row 2 col 1 - zero based - if earlier than xcode 4.5 change to [table.rows[1] objectAtIndex:0]
+    NSString* lastname =    table.rows[1][1]; // row 2 col 2
+    NSNumber* age =         table.rows[1][2]; // row 2 col 3
+    NSNumber* salary =      table.rows[1][3]; // row 2 col 4
+
+    NSLog(@"row:2 %@ %@ %@ %@",
+          firstname,
+          lastname,
+          age,
+          salary);
+    
+       
+    
+}
+/*
+ show syntax table.row[colindex]
+ */
+-(void)ReadeTableFromDB_Method4
+{
+    
+    NSLog(@"Reading table person - method 4.");
     
     DataTable* table = [_db  ExecuteQuery:@"SELECT * FROM person"];
     
