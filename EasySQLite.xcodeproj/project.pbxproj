@@ -28,7 +28,6 @@
 		525B725516034BBE00134DE5 /* DataTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 525B725216034BBE00134DE5 /* DataTable.m */; };
 		525B725616034BBE00134DE5 /* DataTable.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 525B725316034BBE00134DE5 /* DataTable.sqlite */; };
 		525B725916034BDD00134DE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 525B725716034BDD00134DE5 /* ViewController.m */; };
-		525B725B16034C6100134DE5 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 525B725A16034C6100134DE5 /* README */; };
 		528507B61607364D00377B56 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 528507B51607364D00377B56 /* README.md */; };
 /* End PBXBuildFile section */
 
@@ -61,7 +60,6 @@
 		525B725316034BBE00134DE5 /* DataTable.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = DataTable.sqlite; sourceTree = "<group>"; };
 		525B725716034BDD00134DE5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		525B725816034BDD00134DE5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		525B725A16034C6100134DE5 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		528507B51607364D00377B56 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,7 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				528507B51607364D00377B56 /* README.md */,
-				525B725A16034C6100134DE5 /* README */,
 				525B723F16034B7700134DE5 /* libsqlite3.0.dylib */,
 				525B722216034B6A00134DE5 /* EasySQLite */,
 				525B721B16034B6A00134DE5 /* Frameworks */,
@@ -227,7 +224,6 @@
 				525B724D16034BA000134DE5 /* Icon.png in Resources */,
 				525B724E16034BA000134DE5 /* Icon@2x.png in Resources */,
 				525B725616034BBE00134DE5 /* DataTable.sqlite in Resources */,
-				525B725B16034C6100134DE5 /* README in Resources */,
 				528507B61607364D00377B56 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

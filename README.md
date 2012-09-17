@@ -64,7 +64,7 @@ Add these lines to the viewController.m that will access the DB:
 @synthesize db=_db;
 
 //Set up DB connection
-self.db = [DBController sharedDatabaseController:@"DataTable.sqlite"];
+self.db = [DBController sharedDatabaseController:@"DataTable.sqlite"]; // Change DB name to your name here
 
 
 //Execute Command
