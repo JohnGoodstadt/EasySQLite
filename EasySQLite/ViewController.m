@@ -27,6 +27,8 @@
     // setup connection to DB in iVar
     self.db = [DBController sharedDatabaseController:@"DataTable.sqlite"];
     
+    
+    
     [self ReadeTableFromDB_Method1];
     [self ReadeTableFromDB_Method2];
     [self ReadeTableFromDB_Method3];
@@ -59,6 +61,13 @@
     NSLog(@"Reading table person. - method 1.");
     
     DataTable* table = [_db  ExecuteQuery:@"SELECT firstname , lastname , age , salary FROM person"];
+    
+    NSLog(@"Columns in query");
+    for (NSString* colName in table.columns)
+    {
+        NSLog(@"%@",colName);
+    }
+    
     
     for (NSArray* row in table.rows)
     {

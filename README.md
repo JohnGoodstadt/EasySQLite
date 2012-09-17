@@ -11,6 +11,12 @@ Example:
 
 ```obj-c
 DataTable* table = [_db  ExecuteQuery:@"SELECT firstname , lastname , age , salary FROM person"];
+
+NSLog(@"Columns in query");
+for (NSString* colName in table.columns)
+    NSLog(@"%@",colName);
+
+
 for (NSArray* row in table.rows)
 {
     NSString* firstname = row[0]; // in column order 0 is first column in query above
