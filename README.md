@@ -1,11 +1,12 @@
-# EasySQLite
+# EasySQLite #
 
 
 This sample application demonstrates how to easily get your data from your SQLite DB.
 
 Use this file in your own projects as you see fit.
 Please email me at john@goodstadt.me.uk for any problems, fixes, addition or thanks.
-================================================================================
+
+
 Example:
 
 ```obj-c
